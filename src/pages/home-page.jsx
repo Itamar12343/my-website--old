@@ -1,10 +1,12 @@
+import Bubble from "../components/bubble";
 import NavBar from "../components/navBar";
+//import style from "../styles/homePage.module.css";
 
 const HomePage = () => {
     return ( 
         <div>
             <NavBar/>
-            <video controls src="../media/background.mp4"></video> 
+            <Bubble/>
         </div>
      );
 }
