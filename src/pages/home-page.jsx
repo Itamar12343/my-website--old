@@ -1,7 +1,10 @@
+import NavBar from "../components/navBar";
+
 const HomePage = () => {
     return ( 
         <div>
-            hh
+            <NavBar/>
+            <video controls src="../media/background.mp4"></video> 
         </div>
      );
 }
