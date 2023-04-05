@@ -1,6 +1,7 @@
+import style from"../styles/bubble.module.css";
 const Bubble = () => {
     return ( 
-       <div>
+       <div className={style.bubble}>
          <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
         <defs>
           <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
