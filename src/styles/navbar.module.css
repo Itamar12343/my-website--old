@@ -43,6 +43,7 @@
     transition: 0.3s;
     height: 26px;
     width: 50px;
+    overflow: hidden;
 }
 
 .stick1,
@@ -52,11 +53,41 @@
     width: 50px;
     background-color: rgb(142, 166, 252);
     border-radius: 10px;
+    transition: 0.3s;
 }
 
 .stick2,
 .stick3 {
     margin-top: 8px;
+}
+
+.stick2-active {
+    height: 4px;
+    width: 50px;
+    background-color: rgb(142, 166, 252);
+    border-radius: 10px;
+    margin-left: 70px;
+    transition: 0.3s;
+}
+
+.stick1-active {
+    height: 4px;
+    width: 50px;
+    background-color: rgb(142, 166, 252);
+    border-radius: 10px;
+    transition: 0.3s;
+    transform: rotate(-50deg);
+    margin-top: 10px;
+}
+
+.stick3-active {
+    height: 4px;
+    width: 50px;
+    background-color: rgb(142, 166, 252);
+    border-radius: 10px;
+    transition: 0.3s;
+    transform: rotate(50deg);
+    margin-top: -7px;
 }
 
 @media screen and (max-width: 536px) {

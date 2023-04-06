@@ -30,9 +30,9 @@ const NavBar = () => {
         <>
         {width < 536 && 
         <div className={style["nav-btn"]} onClick={nav_btn_clicked}>
-            <div className={style.stick1}></div>
-            <div className={style.stick2}></div>
-            <div className={style.stick3}></div>
+            <div className={isNavbarOpen === false ? style.stick1 : style["stick1-active"]}></div>
+            <div className={isNavbarOpen === false ? style.stick2 : style["stick2-active"]}></div>
+            <div className={isNavbarOpen === false ? style.stick3 : style["stick3-active"]}></div>
         </div>
         }
         <div className={style.navbar} ref={navbarRef}>
