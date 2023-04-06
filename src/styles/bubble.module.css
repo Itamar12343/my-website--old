@@ -10,3 +10,21 @@
     align-items: center;
     transition: 1s;
 }
+
+.title {
+    position: absolute;
+    font-size: 10vw;
+    background-image: linear-gradient(to right, rgb(255, 253, 149), #f9d1f5);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@media screen and (max-width: 803px) {
+    .bubble {
+        height: 90vh;
+        width: 90vw;
+    }
+    .title {
+        font-size: 20vw;
+    }
+}

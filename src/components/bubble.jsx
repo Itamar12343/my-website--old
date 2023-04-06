@@ -27,6 +27,7 @@ const Bubble = () => {
     ></animate>
   </path>
 </svg>
+        <h1 className={style.title}>welcome</h1>
        </div>
      );
 }
