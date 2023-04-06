@@ -17,6 +17,10 @@
     background-image: linear-gradient(to right, rgb(255, 253, 149), #f9d1f5);
     -webkit-background-clip: text;
     color: transparent;
+    -webkit-text-stroke-color: #aaa;
+    -webkit-text-stroke-width: 1px;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 @media screen and (max-width: 803px) {
