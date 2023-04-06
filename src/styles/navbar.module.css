@@ -12,12 +12,19 @@
 
 .nav {
     margin: 10px;
+    margin-top: 6px;
     padding: 10px;
     font-size: 26px;
     border-radius: 10px;
     cursor: pointer;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.nav:hover {
+    background-color: #aeaeae;
 }
 
 .home {
-    background-color: aqua;
+    color: #fff;
 }
