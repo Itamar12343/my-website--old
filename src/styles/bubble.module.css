@@ -1,6 +1,6 @@
 .bubble {
-    height: 50vh;
-    width: 50vw;
+    height: 48vh;
+    width: 48vw;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -8,4 +8,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 1s;
 }
