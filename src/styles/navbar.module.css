@@ -30,18 +30,33 @@
 }
 
 .nav-btn {
-    border: 1px solid black;
-    background-color: transparent;
+    border: none;
+    background-color: rgb(255, 255, 255, 0.6);
     border-radius: 10px;
-    padding: 10px;
+    padding: 14px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0%);
     margin-top: 6px;
-    font-size: 30px;
     z-index: 1;
     cursor: pointer;
     transition: 0.3s;
+    height: 26px;
+    width: 50px;
+}
+
+.stick1,
+.stick2,
+.stick3 {
+    height: 4px;
+    width: 50px;
+    background-color: rgb(142, 166, 252);
+    border-radius: 10px;
+}
+
+.stick2,
+.stick3 {
+    margin-top: 8px;
 }
 
 @media screen and (max-width: 536px) {
@@ -53,5 +68,6 @@
         padding-left: 40px;
         padding-right: 40px;
         transition: 0.3s;
+        opacity: 0;
     }
 }
