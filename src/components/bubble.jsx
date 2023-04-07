@@ -1,5 +1,23 @@
+import { useRef } from "react";
 import style from"../styles/bubble.module.css";
 const Bubble = () => {
+
+  const titleRef = useRef(null);
+
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry =>{
+      console.log(entry.intersectionRatio);
+    });
+  },{
+    root: null,
+    rootMargin: "0px",
+    threshold: 1
+  });
+  setTimeout(() => {
+    observer.observe(titleRef.current);
+  }, 1000);
+
+
     return ( 
        <div className={style.bubble}>
          <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
@@ -27,7 +45,7 @@ const Bubble = () => {
     ></animate>
   </path>
 </svg>
-        <h1 className={style.title}>welcome</h1>
+        <h1 className={style.title} ref={titleRef}>welcome</h1>
        </div>
      );
 }

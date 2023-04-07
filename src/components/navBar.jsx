@@ -10,6 +10,12 @@ const NavBar = () => {
         setWidth(window.innerWidth);
     });
 
+    window.addEventListener("scroll",()=>{
+        if(isNavbarOpen === true){
+            open_close_navbar();
+        }
+    });
+
     function nav_btn_clicked(e){
        open_close_navbar();
     }
