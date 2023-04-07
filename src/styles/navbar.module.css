@@ -100,5 +100,7 @@
         padding-right: 40px;
         transition: 0.3s;
         opacity: 0;
+        -webkit-user-select: none;
+        user-select: none;
     }
 }
