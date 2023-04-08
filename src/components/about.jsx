@@ -26,7 +26,7 @@ const About = () => {
     return ( 
         <div className={style.box}>
             <div style={{transform: imgref_animation ? window.innerWidth > 764 ? "scale(1)" : "translate(-50%,0) scale(1)" : window.innerWidth > 764 ? "scale(0)" : "translate(-50%,0) scale(0)"}} className={style.img} ref={imgref}></div>
-            <p className={style.text}>hello</p>
+            <p className={style.text}>hello world</p>
         </div>
      );
 }
