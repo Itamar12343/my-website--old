@@ -4,17 +4,16 @@ const Bubble = () => {
 
   const titleRef = useRef(null);
 
-  const observer = new IntersectionObserver((entries)=>{
-    entries.forEach(entry =>{
-      console.log(entry.intersectionRatio);
-    });
-  },{
-    root: null,
-    rootMargin: "0px",
-    threshold: 1
-  });
+  window.onscroll = ()=>{
+    if(window.scrollY >= 174){
+      titleRef.current.style.opacity = "0";
+    }else{
+      titleRef.current.style.opacity = "1";
+    }
+  }
+
   setTimeout(() => {
-    observer.observe(titleRef.current);
+    titleRef.current.style.opacity = "1";
   }, 1000);
 
 
