@@ -5,3 +5,16 @@
     position: absolute;
     top: 100%;
 }
+
+.img {
+    height: 50%;
+    width: 400px;
+    background-image: url("../media/me.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255, 0.4);
+    position: absolute;
+    right: 20px;
+    top: 40px;
+}
