@@ -15,6 +15,16 @@
     border-radius: 20px;
     background-color: rgb(255, 255, 255, 0.4);
     position: absolute;
-    right: 20px;
+    right: 40px;
     top: 40px;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 764px) {
+    .img {
+        position: relative;
+        right: initial;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
 }

@@ -1,13 +1,16 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import style from "../styles/about.module.css";
 
 const About = () => {
+    const [imgref_animation, set_imgref_animation] = useState(false);
 
     const imgref = useRef(null);
     const observer = new IntersectionObserver((entries)=>{
         entries.forEach(entry=>{
             if(entry.isIntersecting){
-                console.log(entry.intersectionRatio);
+                set_imgref_animation(true);
+            }else{
+                set_imgref_animation(false);
             }
         });
     },
@@ -22,7 +25,8 @@ const About = () => {
 
     return ( 
         <div className={style.box}>
-            <div className={style.img} ref={imgref}></div>
+            <div style={{transform: imgref_animation ? window.innerWidth > 764 ? "scale(1)" : "translate(-50%,0) scale(1)" : window.innerWidth > 764 ? "scale(0)" : "translate(-50%,0) scale(0)"}} className={style.img} ref={imgref}></div>
+
         </div>
      );
 }
