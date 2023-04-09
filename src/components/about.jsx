@@ -3,7 +3,7 @@ import style from "../styles/about.module.css";
 
 const About = () => {
     const [imgref_animation, set_imgref_animation] = useState(false);
-    const text = "hey, my name is Itamar and I am 16 years old. I started when I was 14 and I learned wb development for 2 years. I learned by my own and made a lot of projects, recently I learned react and started doing a litle bit of backend and webSockets but I am more focused at frontend development. I love coding and I have been doing it for fun and I built most of the projects for friends and family"
+    const text = "hey, my name is Itamar and I am 16 years old. I started when I was 14 and I learned wb development for 2 years. I am selftought and built a lot of projects, recently I learned react and started doing a litle bit of backend and webSockets but I am more focused at frontend development. I love coding and I have been doing it for fun and I built most of the projects for friends and family"
 
     const imgref = useRef(null);
     const observer = new IntersectionObserver((entries)=>{
