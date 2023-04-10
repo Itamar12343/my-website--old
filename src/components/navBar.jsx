@@ -5,6 +5,8 @@ const NavBar = () => {
     const [width, setWidth] = useState(window.innerWidth);
     const [isNavbarOpen, setIsNavbarOpen] = useState(false);
     const navbarRef = useRef(null);
+    const [prevScroll, setPrevScroll] = useState(0);
+    const [Scroll, setScroll] = useState(0);
 
     window.addEventListener("resize",()=>{
         setWidth(window.innerWidth);
@@ -14,6 +16,10 @@ const NavBar = () => {
         if(isNavbarOpen === true){
             open_close_navbar();
         }
+        if(Scroll !== prevScroll){
+            setPrevScroll(Scroll);
+        }
+        setScroll(window.scrollY);
     });
 
     function nav_btn_clicked(e){
@@ -41,7 +47,7 @@ const NavBar = () => {
             <div className={isNavbarOpen === false ? style.stick3 : style["stick3-active"]}></div>
         </div>
         }
-        <div className={style.navbar} ref={navbarRef}>
+        <div style={{opacity: Scroll > prevScroll ? "0" : "1"}} className={style.navbar} ref={navbarRef}>
             <div className={`${style.nav} ${style.home}`}>home</div>
             <div className={`${style.nav} ${style.about}`}>about</div>
             <div className={`${style.nav} ${style.contact}`}>contact</div>
