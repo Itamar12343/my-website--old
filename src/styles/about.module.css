@@ -5,6 +5,7 @@
     top: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .img {
@@ -17,8 +18,20 @@
     background-color: rgb(255, 255, 255, 0.4);
     position: absolute;
     right: 20px;
-    top: 40px;
     transition: 0.3s;
+    animation: img-animation 4s infinite;
+}
+
+@keyframes img-animation {
+    0% {
+        background-color: rgb(255, 255, 255, 0.4);
+    }
+    50% {
+        background-color: rgba(173, 221, 255, 0.4);
+    }
+    100% {
+        background-color: rgb(255, 255, 255, 0.4);
+    }
 }
 
 .text {
@@ -38,12 +51,15 @@
         right: initial;
         left: 50%;
         transform: translate(-50%, 0);
-        height: 500px;
-        width: 400px;
+        height: 400px;
+        width: 300px;
     }
     .text {
         top: 90vh;
         margin: 0;
+    }
+    .box {
+        height: auto;
     }
 }
 
