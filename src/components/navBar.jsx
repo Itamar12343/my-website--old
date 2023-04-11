@@ -47,7 +47,7 @@ const NavBar = () => {
             <div className={isNavbarOpen === false ? style.stick3 : style["stick3-active"]}></div>
         </div>
         }
-        <div style={{opacity: Scroll > prevScroll ? "0" : "1"}} className={style.navbar} ref={navbarRef}>
+        <div style={{top: Scroll > prevScroll ? "-100px" : width > 536 && "0px"}} className={style.navbar} ref={navbarRef}>
             <div className={`${style.nav} ${style.home}`}>home</div>
             <div className={`${style.nav} ${style.about}`}>about</div>
             <div className={`${style.nav} ${style.contact}`}>contact</div>

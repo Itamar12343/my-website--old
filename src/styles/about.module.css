@@ -52,10 +52,12 @@
         left: 50%;
         transform: translate(-50%, 0);
         height: 400px;
-        width: 300px;
+        width: 400px;
+        top: 40px;
+        border-radius: 50%;
     }
     .text {
-        top: 90vh;
+        top: 150px;
         margin: 0;
     }
     .box {
