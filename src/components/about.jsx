@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import style from "../styles/about.module.css";
 
 const About = () => {
@@ -7,8 +7,20 @@ const About = () => {
     const boxRef = useRef(null);
     const textElementRef = useRef(null);
 
-    window.addEventListener("resize",()=>{
+    useEffect(()=>{
+        if(window.innerWidth < 938){
         boxRef.current.style.height = `${textElementRef.current.offsetHeight + 580}px`;
+        }else{
+            boxRef.current.style.height = `${textElementRef.current.offsetHeight + 100}px`;
+        }
+    },[]);
+
+    window.addEventListener("resize",()=>{
+        if(window.innerWidth < 938){
+            boxRef.current.style.height = `${textElementRef.current.offsetHeight + 580}px`;
+            }else{
+                boxRef.current.style.height = `${textElementRef.current.offsetHeight + 100}px`;
+            }
     });
 
     const imgref = useRef(null);
