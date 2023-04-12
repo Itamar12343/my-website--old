@@ -20,6 +20,7 @@
     right: 20px;
     transition: 0.3s;
     animation: img-animation 4s infinite;
+    transform: scale(0);
 }
 
 @keyframes img-animation {
@@ -45,6 +46,8 @@
     color: #fff;
     border: 6px solid #aaa;
     border-radius: 10px;
+    transition: 0.3s;
+    opacity: 0;
 }
 
 @media screen and (max-width: 938px) and (min-width: 427px) {
