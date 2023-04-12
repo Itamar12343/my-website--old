@@ -21,7 +21,7 @@ const About = () => {
         entries.forEach(entry=>{
             if(entry.isIntersecting){
                 scrollAnimation(last.target);
-                observer.unobserve(last.target);
+                //observer.unobserve(last.target);
             }else{
                 endScrollAnimation(last.target);
             }
