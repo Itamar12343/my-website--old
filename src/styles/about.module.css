@@ -46,7 +46,7 @@
     border-radius: 10px;
 }
 
-@media screen and (max-width: 938px) {
+@media screen and (max-width: 938px) and (min-width: 427px) {
     .img {
         right: initial;
         left: 50%;
@@ -56,9 +56,14 @@
         top: 40px;
         border-radius: 50%;
     }
+}
+
+@media screen and (max-width: 938px) {
     .text {
-        top: 150px;
+        position: absolute;
+        top: 450px;
         margin: 0;
+        margin: 10px;
     }
     .box {
         height: 1000px;
@@ -68,5 +73,17 @@
 @media screen and (min-width: 777px) {
     .text {
         font-size: 34px;
+    }
+}
+
+@media screen and (max-wdth: 426px) {
+    .img {
+        right: initial;
+        left: 50%;
+        transform: translate(-50%, 0);
+        height: 400px;
+        width: 400px;
+        top: 40px;
+        border-radius: 50%;
     }
 }
